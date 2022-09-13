@@ -1,6 +1,12 @@
-﻿namespace assemblyLineApp;
+﻿namespace assemblyLineApp.Interfaces;
 
+/// <summary>
+/// Сборочный конвейер
+/// </summary>
 public interface IAssemblyLine
 {
-    public void StartLine();
+    /// <summary>
+    /// Запуск конвейера
+    /// </summary>
+    public Task StartLine();
 }

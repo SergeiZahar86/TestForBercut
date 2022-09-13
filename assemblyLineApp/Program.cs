@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Diagnostics.CodeAnalysis;
+using Autofac;
+
+namespace assemblyLineApp;
+
+[ExcludeFromCodeCoverage]
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        await ConfigurationAutofac.CompositionRoot().Resolve<Application>().Run();
+    }
+}

@@ -1,6 +1,9 @@
 ﻿namespace assemblyLineApp.Interfaces;
 
-public interface IActuatingMechanism_1
+/// <summary>
+/// Интерфейс исполнительного механизма №1
+/// </summary>
+public interface IActuatingMechanism1: IActuatingMechanismBase
 {
     
 }
